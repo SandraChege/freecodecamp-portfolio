@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <!--photos-->
+    <link rel="stylesheet" href="photos">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c2761d2df3.js" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav id="navbar">
+        <div class="navbar">
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--HOME SECTION-->
+    <section id="welcome-section">
+        <div class="welcometxt">
+            <p>
+                Hi. I'm sandra.
+                A 
+                <span>s</span>
+                <span>o</span>
+                <span>f</span>
+                <span>t</span>
+                <span>w</span>
+                <span>a</span>
+                <span>r</span>
+                <span>e</span>
+                <span> </span>
+                <span>d</span>
+                <span>e</span>
+                <span>v</span>
+                <span>e</span>
+                <span>l</span>
+                <span>o</span>
+                <span>p</span>
+                <span>e</span>
+                <span>r</span>
+            </p>
+        </div>
+    </section>
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <div class="aboutme">
+           <div class="aboutimg">
+               <img src="./photos/about.jpeg" alt="A picture of me" height="640px" width="480px">
+           </div>
+           <div class="abouttxt">
+               <h3>
+                   I am a designer with passion.
+               </h3>
+            <p>
+                I am Sandra Mwihaki. After high school I joined Africa Nazarene University to pursue Computer Science and fell in love with Software engineering.
+                I am 21 years of age and my favourite activities is watching movoes especially criminal detective genre and reading novels.At this point, I am teaching 
+                myself how to code and I hope in the next two three years i will be a professional wen developer.
+            </p>
+           </div>
+        </div>
+    </section>
+    <!--SKILLS SECTION-->  
+    <!--PROJECT SECTION-->
+    <!--CONTACT SECTION-->
+    <section id="contact">
+        <div class="contactcontainer">
+            <h4>get in touch</h4>
+            <form>
+                <div class="contactform">
+                    <label for="fullname">
+                        <input type="text" name="name" id="fullname" placeholder="Full Name" onkeyup="namevalidation()">
+                        <span id="name-error"></span>
+                    </label>
+                    
+                    <label for="email">
+                        <input type="email" name="mail" id="email" placeholder="Your email">
+                    </label>
+
+                    <textarea name="" id="textmessage" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--FOOTER-->  
+
+    <!--javascript-->
+    <script src="/JS/portfolio.js"></script>
+</body>
+</html>

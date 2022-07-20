@@ -1,0 +1,154 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+--claret:#7f1734;
+--black:#000000;
+--deepGreen-CyanTurquoise:#177F62;
+--laSalleGreen:#177F2E;
+--blueSapphire:#17687F;
+--stpatrickblue:#17347F;
+--forestgreen:#347F17;
+--americanviolet: #62177F;
+--white:#ffffff;
+--font-Montserrat: 'Montserrat', sans-serif;
+--font-poppins: 'Poppins', sans-serif;
+--font-roboto: 'Roboto', sans-serif;
+}
+#navbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .1);
+    color: var(--white);
+}
+.navbar > ul > li{
+    padding: 18px;
+    text-transform: uppercase;
+}
+.navbar > ul >li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color3);
+} 
+.navbar > ul >li >a:hover{
+    color: var(--laSalleGreen);
+}
+/*home section*/
+#welcome-section{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcometxt{
+    color: var(--claret);
+    font-size: 60px;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    width: 600px;
+    translate: (-50%, -50%);
+}
+.welcometxt > span{
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate{
+/*Finish on the animation and the responsive navigation bar i.e hamburger menu*/
+}
+
+/*contact section*/
+#contact{
+    background-color: rgba(0, 0, 0, .85);
+} 
+.contactcontainer h4{
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 15px 5px 5px 10px;
+}   
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#fullname, #email, #textmessage {
+   width: 600px;
+   padding: 15px;
+   margin: 5px; 
+   border: 1px solid white;
+   font-size: 18px;
+   border-radius: 2%;
+}
+#textmessage{
+    resize: none;
+}
+input[type=submit]{
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    margin-left: 350px;
+    font-size: 18px;
+    border-radius: 5%;
+}
+#name-error{
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    text-transform: capitalize;
+}
+@media all and (max-width:500px){
+    #fullname, #email, #textmessage{
+        width: 40px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media all
+
+Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+ Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+*/
