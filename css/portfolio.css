@@ -15,8 +15,11 @@
 --forestgreen:#347F17;
 --americanviolet: #62177F;
 --white:#ffffff;
+/*heading*/
 --font-Montserrat: 'Montserrat', sans-serif;
+/*subheadings*/
 --font-poppins: 'Poppins', sans-serif;
+/*body*/
 --font-roboto: 'Roboto', sans-serif;
 }
 #navbar{
@@ -70,7 +73,75 @@
 @keyframes animate{
 /*Finish on the animation and the responsive navigation bar i.e hamburger menu*/
 }
+/*ABOUT SECTION*/
+#about{
+    background-color: rgba(0, 0, 0, .85);
+    display: block;
+}
+.aboutcontainer{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.aboutme{
+    width: 100%;
+    display: flex;
+}
+.aboutimg{
+    margin-left: 80px;
+    border: 5px solid var(--americanviolet);
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/about.jpeg);
+    width: 1000px;
+    height: 540px;*/
+}
+.abouttxt{
+    font-size: 20px;
+    color: var(--white);
+    font-family: var(--font-roboto);
+    padding: 10px;
+    margin-right: 80px;
+    margin-left: 30px;
+    word-wrap: normal;
+}
+.abouttxt h3{
+    font-size: 25px;
+    color: var(--laSalleGreen);
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.personalinfo{
+    margin-top: 20px;
+}
+.col1{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ct_about {
+    margin: 6px 0;
+}
+.personalinfo span{
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 25%;
+}
+@media only screen and (max-width: 991px){
+.personalinfo span {
+    font-size: 16px !important;
+    }
+}
+@media all and (max-width:500px){
+    .personalinfo span {
+        font-size: 14px !important;
+    } 
 
+}
 /*contact section*/
 #contact{
     background-color: rgba(0, 0, 0, .85);
@@ -108,6 +179,10 @@ input[type=submit]{
     margin-left: 350px;
     font-size: 18px;
     border-radius: 5%;
+    background-color: var(--forestgreen);
+}
+input[type=submit]:hover{
+    background-color: var(--white);
 }
 #name-error{
     color: red;
@@ -115,13 +190,49 @@ input[type=submit]{
     position: absolute;
     text-transform: capitalize;
 }
-@media all and (max-width:500px){
+
+/*@media all and (max-width:500px){
     #fullname, #email, #textmessage{
         width: 40px;
         padding: 5px;
         font-size: 16px;
     }
+}*/
+
+/*FOOTER*/
+#footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    font-family: var(--font-poppins);
 }
+.footercontainer{
+    text-align: center;
+}
+.footercontainer .myname{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800px;
+    color: var(--white);
+}
+.footercontainer .footericons{
+    display: block;
+    text-align: center;
+}
+.footercontainer .footericons a{
+    color: var(--forestgreen);
+    padding: 8px;
+    margin: 5px;
+    font-size: 25px;
+}
+.footercontainer .footericons a:hover{
+    color: var(--blueSapphire);
+}
+.footercontainer .footercopyright{
+    padding: 5px;
+    font-size: 20px;
+    color: var(--white);
+}
+
 
 
 

@@ -1,4 +1,5 @@
-/*function emailverification(enteredemail) {
+//EMAIL VALIDATION
+function emailverification() {
     var mail=document.getElementById("email").value;
     var regx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -10,9 +11,9 @@
         return false;
     }
 }
-*/
-var nameError=document.getElementById("name-error");
 
+//NAME VALIDATION
+var nameError=document.getElementById("name-error");
 function namevalidation(){
     var name=document.getElementById("fullname").value;
 

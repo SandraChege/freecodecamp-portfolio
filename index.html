@@ -14,9 +14,7 @@
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,200&family=Roboto&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -37,8 +35,8 @@
         <div class="welcometxt">
             <p>
                 Hi. I'm sandra.
-                A 
-                <span>s</span>
+                A <span>Software developer</span>
+                <!--<span>s</span>
                 <span>o</span>
                 <span>f</span>
                 <span>t</span>
@@ -55,26 +53,52 @@
                 <span>o</span>
                 <span>p</span>
                 <span>e</span>
-                <span>r</span>
+                <span>r</span>-->
             </p>
         </div>
     </section>
     <!--ABOUT SECTION-->
     <section id="about">
-        <div class="aboutme">
-           <div class="aboutimg">
-               <img src="./photos/about.jpeg" alt="A picture of me" height="640px" width="480px">
-           </div>
-           <div class="abouttxt">
-               <h3>
-                   I am a designer with passion.
-               </h3>
-            <p>
-                I am Sandra Mwihaki. After high school I joined Africa Nazarene University to pursue Computer Science and fell in love with Software engineering.
-                I am 21 years of age and my favourite activities is watching movoes especially criminal detective genre and reading novels.At this point, I am teaching 
-                myself how to code and I hope in the next two three years i will be a professional wen developer.
-            </p>
-           </div>
+        <div class="aboutcontainer">
+            <div class="aboutme">
+                <div class="aboutimg">
+                    <img src="./photos/about.jpeg" alt="A picture of me" height="540px" width="380px">
+                </div>
+                <div class="abouttxt">
+                    <div>
+                        <h3>
+                            I am a designer with passion.
+                        </h3>
+                     <p style="line-height: 1.5;">
+                         I am Sandra Mwihaki. After high school I joined Africa Nazarene University to pursue Computer Science and fell in love with Software engineering.
+                         I am 21 years of age and my favourite activities is watching movoes especially criminal detective genre and reading novels.At this point, I am teaching 
+                         myself how to code and I hope in the next two three years I will be a professional web developer.
+                     </p>
+                    </div>
+
+                 <div class="personalinfo">
+                    <div class="col1">
+                        <div class="ct_about">
+                           <span> Name </span> : Sandra 											   
+                        </div>
+                    </div>
+
+                    <div class="col1">
+                        <div class="ct_about">
+                           <span> Age </span>
+                           : 21
+                        </div>
+                    </div>
+
+                    <div class="col1">
+                        <div class="ct_about">
+                           <span> Email </span>
+                           : Sandra@gmail.com
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--SKILLS SECTION-->  
@@ -91,7 +115,7 @@
                     </label>
                     
                     <label for="email">
-                        <input type="email" name="mail" id="email" placeholder="Your email">
+                        <input type="text" name="mail" id="email" placeholder="Your email" onkeyup="emailverification()">
                     </label>
 
                     <textarea name="" id="textmessage" cols="30" rows="10" placeholder="Message"></textarea>
@@ -102,7 +126,25 @@
         </div>
     </section>
     <!--FOOTER-->  
-
+    <section id="footer">
+        <div class="footer">
+            <div class="footercontainer">
+                <div class="myname">
+                    <p>Sandra</p>
+                </div>
+                <div class="footericons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-free-code-camp"></i></a>
+                </div>
+                <div class="footercopyright">
+                    <p><i class="fa-regular fa-copyright"></i> 2022. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--javascript-->
     <script src="/JS/portfolio.js"></script>
 </body>
