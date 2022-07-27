@@ -60,23 +60,38 @@
 }
 .welcometxt{
     color: var(--claret);
-    font-size: 60px;
+    font-size: 35px;
     position: absolute;
     top: 400px;
-    right: 20px;
-    width: 600px;
+    right: 10px;
+    width: 500px;
     translate: (-50%, -50%);
 }
-.welcometxt > span{
-    animation: animate 1.5s linear infinite;
+.dynamic-text li{
+    list-style: none;
+    color: var(--stpatrickblue);
 }
-@keyframes animate{
-/*Finish on the animation and the responsive navigation bar i.e hamburger menu*/
-}
+
+
+/*@keyframes animate{
+Finish on the animation and the responsive navigation bar i.e hamburger menu
+}/*
+
 /*ABOUT SECTION*/
 #about{
     background-color: rgba(0, 0, 0, .85);
     display: block;
+}
+.subheadings{
+    padding: 15px 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font-Montserrat);
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(var(--blueSapphire), var(--forestgreen));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .aboutcontainer{
     margin-right: auto;
@@ -112,6 +127,7 @@
     padding: 10px;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 .personalinfo{
     margin-top: 20px;
@@ -131,7 +147,16 @@
     display: inline-block;
     width: 25%;
 }
-@media only screen and (max-width: 991px){
+.btn{
+    background-color: var(--americanviolet);
+    border: none;
+    color: var(--white);
+    padding: 16px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+/*@media only screen and (max-width: 991px){
 .personalinfo span {
     font-size: 16px !important;
     }
@@ -141,6 +166,110 @@
         font-size: 14px !important;
     } 
 
+}*/
+/*SKILLS SECTION*/
+#skills{
+    background-color: rgba(0, 0, 0, .85);
+}
+.skills-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills-wrapper h2{
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background-color: #959595;
+    width: 600px;
+    height: 15px;
+    border-radius: 8px;
+}
+.progress-bar div{
+    height: 15px;
+    border-radius: 8px;
+    width: 0%; 
+}
+/*CIRCLE FOR PROGRESS BAR*/
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--americanviolet);
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html, .javascript, .UI-UX{
+    background: linear-gradient( to right, var(--laSalleGreen), var(--blueSapphire));
+}
+.css, .php{
+    background: linear-gradient( to right, var(--stpatrickblue), var(--forestgreen));
+}
+.html span, .css span, .javascript span, .php span, .UI-UX span{
+    border: 1px solid var(--americanviolet);
+}
+.html{
+    border: 1px solid var(--americanviolet);
+    animation: html 1s linear forwards;
+}
+.css{
+    border: 1px solid var(--americanviolet);
+    animation: css 1s linear forwards;
+}
+.javascript{
+    border: 1px solid var(--americanviolet);
+    animation: javascript 1s linear forwards;
+}
+.php{
+    border: 1px solid var(--americanviolet);
+    animation: php 1s linear forwards;
+}
+.UI-UX{
+    border: 1px solid var(--americanviolet);
+    animation: UI-UX 1s linear forwards;
+}
+@keyframes html {
+    100%{
+        width: 95%;
+    }
+    
+}
+@keyframes css {
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes javascript {
+    100%{
+        width: 25%;
+    }
+    
+}
+@keyframes php {
+    100%{
+        width: 20%;
+    }
+    
+}
+@keyframes UI-UX {
+    100%{
+        width: 10%;
+    }
+    
 }
 /*contact section*/
 #contact{
