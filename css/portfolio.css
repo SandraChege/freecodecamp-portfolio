@@ -331,10 +331,7 @@ input[type=submit]{
     margin-left: 350px;
     font-size: 18px;
     border-radius: 5%;
-    background-color: var(--forestgreen);
-}
-input[type=submit]:hover{
-    background-color: var(--white);
+    background-color: var(--laSalleGreen);
 }
 #name-error{
     color: red;
@@ -377,7 +374,7 @@ input[type=submit]:hover{
     font-size: 25px;
 }
 .footercontainer .footericons a:hover{
-    color: var(--blueSapphire);
+    color: var(--white);
 }
 .footercontainer .footercopyright{
     padding: 5px;
