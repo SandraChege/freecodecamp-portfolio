@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange:#DB5304;
+}
+.navbar{
+    /*background: var(--orange);*/
+    padding: 30px 0;
+    transition:all 0.5s ease;
+    position: fixed;
+    width: 100%;
+    /*FONTFAMILY*/
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: var(--orange);
+}    
+.max-width{
+    max-width: 1300px;
+    padding: 0 85px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    padding-left: 750px;
+}
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .menu li a{
+    text-transform: capitalize;  
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: var(--orange);
+}
+.navbar .sticky .menu li a:hover{
+    color: #fff;
+}
+/*HOME SECTION*/
+.home{
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/home.jpeg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: white;  
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .home-1{
+    font-size: 27px;
+}
+.home .home-content .home-2{
+    font-size: 60px;
+}
+.home .home-content .home-3{
+    font-size: 37px;
+}
+.home .home-content .home-3 span{
+    color: var(--orange);
+}

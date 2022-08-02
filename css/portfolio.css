@@ -14,6 +14,7 @@
 --stpatrickblue:#17347F;
 --forestgreen:#347F17;
 --americanviolet: #62177F;
+--orange:#DB5304;
 --white:#ffffff;
 /*heading*/
 --font-Montserrat: 'Montserrat', sans-serif;
@@ -49,6 +50,13 @@
 .navbar > ul >li >a:hover{
     color: var(--laSalleGreen);
 }
+/*RESPONSIVENESS OF NAV */
+.menubtn{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 25px;
+}
+
 /*home section*/
 #welcome-section{
     width: 100%;
@@ -57,22 +65,26 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/home.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: var(--font-Montserrat);
 }
 .welcometxt{
-    color: var(--claret);
-    font-size: 35px;
-    position: absolute;
-    top: 400px;
-    right: 10px;
-    width: 500px;
-    translate: (-50%, -50%);
+    color: var(--orange);
+    width: 100%;
+    display: flex;
 }
-.dynamic-text li{
-    list-style: none;
-    color: var(--stpatrickblue);
+.homecontent{ 
+    top: 20rem;
+    left: 200px;}
+
+.homecontent .home-1{
+    font-size: 27px;
 }
-
-
+.homecontent .home-2{
+    font-size: 57px;
+}
+.homecontent .home-3{
+    font-size: 27px;
+}
 /*@keyframes animate{
 Finish on the animation and the responsive navigation bar i.e hamburger menu
 }/*
