@@ -48,7 +48,7 @@
     color: var(--color3);
 } 
 .navbar > ul >li >a:hover{
-    color: crimson;
+    color: var(--laSalleGreen);
 }
 /*RESPONSIVENESS OF NAV */
 .menubtn{
@@ -71,7 +71,7 @@
     font-family: var(--font-Montserrat);
 }
 .welcometxt{
-    color: crimson;
+    color: var(--forestgreen);
     width: 100%;
     display: flex;
 }
@@ -130,7 +130,7 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
 }
 .aboutimg{
     margin-left: 80px;
-    border: 5px solid var(--americanviolet);
+    /*giborder: 5px solid var(--laSalleGreen);*/
     /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photos/about.jpeg);
     width: 1000px;
     height: 540px;*/
@@ -171,7 +171,7 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     width: 25%;
 }
 .btn{
-    background-color: var(--americanviolet);
+    background-color: var(--laSalleGreen);
     border: none;
     color: var(--white);
     padding: 16px 30px;
