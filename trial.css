@@ -47,7 +47,7 @@
     color: var(--orange);
 }
 .navbar .sticky .menu li a:hover{
-    color: #fff;
+    color: black;
 }
 /*HOME SECTION*/
 .home{
