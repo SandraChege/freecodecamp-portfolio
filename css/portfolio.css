@@ -294,6 +294,18 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     }
     
 }
+/*PROJECT SECTION*/
+#projects{
+    background-color: rgba(0, 0, 0, .85); 
+    width: 100%;
+}
+.project-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
 /*contact section*/
 #contact{
     background-color: rgba(0, 0, 0, .85);
