@@ -71,7 +71,7 @@
     font-family: var(--font-Montserrat);
 }
 .welcometxt{
-    color: var(--forestgreen);
+    color: var(--white);
     width: 100%;
     display: flex;
 }
@@ -90,11 +90,18 @@
     font-size: 27px;
 }
 .homecontent .home-3 span{
-    animation: typing 3.5s steps(13) infinite;
+    /*animation: typing 3.5s steps(13) infinite;*/
+    animation: slidein 5s infinite;
 }
-@keyframes typing{
+/*@keyframes typing{
     from { width: 0 }
     to { width: 100% }
+}*/
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
 }
 /*@keyframes animate{
 Finish on the animation and the responsive navigation bar i.e hamburger menu
@@ -196,9 +203,9 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
 }
 .skills-container{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
 }
 .skills-wrapper h2{
@@ -208,6 +215,9 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     margin-bottom: 5px;
     color: #fff;
     font-size: 16px;
+}
+.skills-wrapper div:last-of-type{
+    margin-bottom: 70px;
 }
 .progress-bar{
     background-color: #959595;
@@ -336,6 +346,8 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
 }
 .projectdescription{
     color: var(--laSalleGreen);
+    font-family: var(--font-roboto);
+    font-size: 17px;
 }
 /*contact section*/
 #contact{
