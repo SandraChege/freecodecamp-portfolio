@@ -235,11 +235,8 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     justify-content: center;
 }
 
-.html, .javascript, .UI-UX{
+.html, .javascript, .UI-UX, .css, .php{
     background: linear-gradient( to right, var(--laSalleGreen), var(--blueSapphire));
-}
-.css, .php{
-    background: linear-gradient( to right, var(--stpatrickblue), var(--forestgreen));
 }
 .html span, .css span, .javascript span, .php span, .UI-UX span{
     border: 1px solid var(--americanviolet);
@@ -299,12 +296,46 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     background-color: rgba(0, 0, 0, .85); 
     width: 100%;
 }
-.project-wrapper{
+.project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    place-content: space-evenly;
+    grid-template-areas: "title-1 title-2 title-3 title-4";
+}
+.projects1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(100%/4 -10px);
+}
+.projects1 a{
+    text-decoration: none;
+}
+.projects1 a img:hover{
+    opacity: 0.5;
+}
+.Leopard{
+    grid-area: title-1;
+    border: 1px hidden;
+    place-content: center;
+}
+.kenyatta{
+    grid-area: title-2;
+    border: 1px hidden;
+    place-content: center;
+}
+.ghanian-name{
+    grid-area: title-3;
+    border: 1px hidden;
+    place-content: center;
+}
+.tech-doc{
+    grid-area: title-4;
+    border: 1px hidden;
+    place-content: center;
+}
+.projectdescription{
+    color: var(--laSalleGreen);
 }
 /*contact section*/
 #contact{
