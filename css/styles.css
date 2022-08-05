@@ -151,7 +151,7 @@ Finish on the animation and the responsive navigation bar i.e hamburger menu
     margin-left: 30px;
     word-wrap: normal;
 }
-.abouttxt h3{
+.abouttxt .project-tile{
     font-size: 25px;
     color: var(--laSalleGreen);
     padding: 10px;
@@ -395,13 +395,13 @@ input[type=submit]{
     text-transform: capitalize;
 }
 
-/*@media all and (max-width:500px){
+@media all and (max-width:500px){
     #fullname, #email, #textmessage{
         width: 40px;
         padding: 5px;
         font-size: 16px;
     }
-}*/
+}
 
 /*FOOTER*/
 #footer{
